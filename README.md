@@ -1,36 +1,43 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Infinito Hiro Digital Card Project
 
-## Getting Started
+## 🍝 Live Site
+**https://infinito.yamadafooddev.com**
 
-First, run the development server:
+## 📱 Features
+- Digital business card for Infinito Hiro (Italian restaurant in Akasaka, Tokyo)
+- Bilingual support (Japanese/English toggle)
+- Mobile-first responsive design
+- QR code integration for easy sharing
+- Custom domain with SSL
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+## 🎨 Design
+- Clean, museum-quiet aesthetic
+- Single-column layout optimized for mobile
+- Typography and spacing inspired by high-end restaurant branding
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+## 🔗 Quick Links
+- **Main Page**: https://infinito.yamadafooddev.com/infinito-hiro
+- **QR Code Download**: https://infinito.yamadafooddev.com/qr
+- **OMAKASE Reservations**: https://omakase.in/r/rp424507
 
-You can start editing the page by modifying `app/page.js`. The page auto-updates as you edit the file.
+## 📞 Contact Information
+- **Address**: 5-1-38 Akasaka, Minato-ku, Tokyo 107-0052, Japan
+- **Phone**: +81 3-5797-7610
+- **Hours**: 12:00-14:00, 18:00-22:00
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+## 🛠 Tech Stack
+- Next.js 16.2.4 (App Router)
+- Vercel deployment
+- Custom domain via Sakura Internet DNS
+- QR code generation with `qrcode` library
 
-## Learn More
+## 📱 QR Codes
+Print-ready QR codes available in multiple formats:
+- PNG: 512px, 1024px, 2048px
+- SVG: Vector format (infinite scaling)
+- Base64: For direct embedding
 
-To learn more about Next.js, take a look at the following resources:
+## 🚀 Deployment
+Deployed on Vercel with automatic SSL certificate and custom domain configuration.
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+Generated with Claude Code 🤖
