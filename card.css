@@ -425,3 +425,541 @@ html, body {
 
 /* selection */
 ::selection { background: var(--ink); color: var(--paper); }
+
+/* ===== Recruitment Pages Styles ===== */
+
+/* Recruit link on main page */
+.ih-recruit-wrap {
+  margin-top: 40px;
+  padding: 0;
+}
+
+.ih-recruit-link {
+  display: block;
+  border: 1px solid var(--rule);
+  padding: 20px;
+  text-decoration: none;
+  color: var(--ink);
+  text-align: center;
+  transition: background 200ms ease, border-color 200ms ease;
+}
+.ih-recruit-link:hover {
+  background: rgba(0,0,0,0.02);
+  border-color: var(--ink-soft);
+}
+
+.ih-recruit-label {
+  display: block;
+  font-family: var(--serif-jp);
+  font-size: 20px;
+  letter-spacing: 0.12em;
+  margin-bottom: 6px;
+}
+:lang(en) .ih-recruit-label {
+  font-family: var(--serif-en);
+  font-size: 22px;
+  letter-spacing: 0.08em;
+}
+
+.ih-recruit-sub {
+  display: block;
+  font-family: var(--sans-jp);
+  font-size: 11px;
+  letter-spacing: 0.28em;
+  color: var(--ink-soft);
+}
+:lang(en) .ih-recruit-sub {
+  text-transform: uppercase;
+  letter-spacing: 0.24em;
+}
+
+.ih-recruit-arrow {
+  display: inline-block;
+  margin-left: 8px;
+  font-family: var(--serif-en);
+  color: var(--ink-soft);
+}
+
+/* Recruit pages common */
+.ih-recruit .ih-stack,
+.ih-job-detail .ih-stack {
+  padding-top: 80px;
+}
+
+.ih-title-large {
+  font-family: var(--serif-jp);
+  font-size: 32px;
+  letter-spacing: 0.12em;
+  margin: 28px 0 16px;
+  font-weight: 400;
+}
+:lang(en) .ih-title-large {
+  font-family: var(--serif-en);
+  font-size: 36px;
+  letter-spacing: 0.04em;
+}
+
+.ih-recruit-nav {
+  display: flex;
+  gap: 20px;
+  justify-content: center;
+  margin: 32px 0;
+}
+
+.ih-nav-link {
+  font-family: var(--sans-jp);
+  font-size: 12px;
+  letter-spacing: 0.2em;
+  color: var(--ink-soft);
+  text-decoration: none;
+  padding: 8px 0;
+  border-bottom: 1px solid transparent;
+  transition: color 200ms ease, border-color 200ms ease;
+}
+:lang(en) .ih-nav-link {
+  text-transform: uppercase;
+  letter-spacing: 0.18em;
+}
+.ih-nav-link:hover {
+  color: var(--ink);
+  border-color: var(--rule);
+}
+
+/* Recruit sections */
+.ih-recruit-section,
+.ih-job-section {
+  margin: 56px 0;
+  padding: 0;
+}
+
+.ih-section-title {
+  font-family: var(--serif-jp);
+  font-size: 22px;
+  letter-spacing: 0.1em;
+  margin: 0 0 24px;
+  font-weight: 400;
+  text-align: center;
+}
+:lang(en) .ih-section-title {
+  font-family: var(--serif-en);
+  font-size: 24px;
+  letter-spacing: 0.04em;
+}
+
+.ih-section-subtitle {
+  font-family: var(--sans-jp);
+  font-size: 12px;
+  letter-spacing: 0.24em;
+  color: var(--ink-soft);
+  text-align: center;
+  margin: -16px 0 24px;
+}
+:lang(en) .ih-section-subtitle {
+  text-transform: uppercase;
+}
+
+.ih-recruit-text,
+.ih-job-text {
+  font-family: var(--serif-jp);
+  font-size: 14px;
+  line-height: 2;
+  letter-spacing: 0.06em;
+  color: var(--ink);
+  white-space: pre-wrap;
+  max-width: 32em;
+  margin: 0 auto;
+}
+:lang(en) .ih-recruit-text,
+:lang(en) .ih-job-text {
+  font-family: var(--serif-en);
+  font-size: 15px;
+  line-height: 1.8;
+  letter-spacing: 0.02em;
+}
+
+/* Feature grid */
+.ih-feature-grid {
+  display: grid;
+  gap: 32px;
+  margin-top: 32px;
+}
+
+.ih-feature-card {
+  text-align: center;
+  padding: 24px;
+  border: 1px solid var(--rule-soft);
+}
+
+.ih-feature-title {
+  font-family: var(--serif-jp);
+  font-size: 18px;
+  letter-spacing: 0.08em;
+  margin: 0 0 12px;
+  font-weight: 400;
+}
+:lang(en) .ih-feature-title {
+  font-family: var(--serif-en);
+  font-size: 19px;
+  letter-spacing: 0.04em;
+}
+
+.ih-feature-text {
+  font-family: var(--sans-jp);
+  font-size: 12px;
+  letter-spacing: 0.18em;
+  color: var(--ink-soft);
+  margin: 0;
+}
+:lang(en) .ih-feature-text {
+  font-size: 13px;
+  letter-spacing: 0.12em;
+}
+
+/* Jobs list */
+.ih-jobs-list {
+  display: grid;
+  gap: 24px;
+  margin-top: 32px;
+}
+
+.ih-job-card {
+  display: block;
+  padding: 24px;
+  border: 1px solid var(--rule);
+  text-decoration: none;
+  color: var(--ink);
+  transition: background 200ms ease, border-color 200ms ease;
+}
+.ih-job-card:hover {
+  background: rgba(0,0,0,0.02);
+  border-color: var(--ink-soft);
+}
+
+.ih-job-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  margin-bottom: 12px;
+}
+
+.ih-job-title {
+  font-family: var(--serif-jp);
+  font-size: 20px;
+  letter-spacing: 0.08em;
+  margin: 0;
+  font-weight: 400;
+}
+:lang(en) .ih-job-title {
+  font-family: var(--serif-en);
+  font-size: 22px;
+  letter-spacing: 0.04em;
+}
+
+.ih-job-type {
+  font-family: var(--sans-jp);
+  font-size: 11px;
+  letter-spacing: 0.2em;
+  color: var(--ink-soft);
+}
+:lang(en) .ih-job-type {
+  text-transform: uppercase;
+}
+
+.ih-job-salary {
+  font-family: var(--serif-en);
+  font-size: 15px;
+  letter-spacing: 0.02em;
+  line-height: 1.5;
+  color: var(--ink);
+  margin: 0 0 16px;
+}
+
+.ih-job-link {
+  font-family: var(--sans-jp);
+  font-size: 12px;
+  letter-spacing: 0.2em;
+  color: var(--ink-soft);
+}
+:lang(en) .ih-job-link {
+  text-transform: uppercase;
+}
+
+/* Job detail page */
+.ih-job-subtitle {
+  font-family: var(--sans-jp);
+  font-size: 13px;
+  letter-spacing: 0.24em;
+  color: var(--ink-soft);
+  text-align: center;
+  margin: 8px 0 0;
+}
+:lang(en) .ih-job-subtitle {
+  text-transform: uppercase;
+  font-size: 14px;
+}
+
+.ih-job-specs {
+  margin: 32px 0;
+  padding: 0;
+}
+
+.ih-spec-row {
+  display: grid;
+  grid-template-columns: 140px 1fr;
+  gap: 24px;
+  padding: 16px 0;
+  border-bottom: 1px solid var(--rule-soft);
+}
+
+.ih-spec-row dt {
+  font-family: var(--sans-jp);
+  font-size: 11px;
+  letter-spacing: 0.24em;
+  color: var(--ink-soft);
+  font-weight: 400;
+}
+:lang(en) .ih-spec-row dt {
+  text-transform: uppercase;
+}
+
+.ih-spec-row dd {
+  margin: 0;
+  font-family: var(--serif-jp);
+  font-size: 14px;
+  letter-spacing: 0.06em;
+  color: var(--ink);
+}
+:lang(en) .ih-spec-row dd {
+  font-family: var(--serif-en);
+  font-size: 15px;
+  letter-spacing: 0.02em;
+}
+
+/* Apply section */
+.ih-apply-list {
+  list-style: none;
+  padding: 0;
+  margin: 24px 0 32px;
+}
+
+.ih-apply-list li {
+  padding: 12px 0;
+  padding-left: 24px;
+  position: relative;
+  font-family: var(--serif-jp);
+  font-size: 14px;
+  letter-spacing: 0.06em;
+}
+:lang(en) .ih-apply-list li {
+  font-family: var(--serif-en);
+  font-size: 15px;
+  letter-spacing: 0.02em;
+}
+
+.ih-apply-list li::before {
+  content: "•";
+  position: absolute;
+  left: 0;
+  color: var(--ink-soft);
+}
+
+/* Contact methods & Apply buttons */
+.ih-contact-methods {
+  display: grid;
+  gap: 16px;
+  margin-top: 32px;
+}
+
+.ih-contact-method {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  padding: 20px;
+  border: 1px solid var(--rule);
+  text-decoration: none;
+  color: var(--ink);
+  text-align: center;
+  transition: background 200ms ease, border-color 200ms ease;
+}
+.ih-contact-method:hover {
+  background: rgba(0,0,0,0.02);
+  border-color: var(--ink-soft);
+}
+
+.ih-contact-label {
+  font-family: var(--sans-jp);
+  font-size: 11px;
+  letter-spacing: 0.24em;
+  color: var(--ink-soft);
+}
+:lang(en) .ih-contact-label {
+  text-transform: uppercase;
+}
+
+.ih-contact-value {
+  font-family: var(--serif-en);
+  font-size: 16px;
+  letter-spacing: 0.04em;
+}
+
+.ih-apply-buttons {
+  display: grid;
+  gap: 16px;
+  margin-top: 32px;
+}
+
+.ih-apply-button {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  padding: 24px;
+  text-decoration: none;
+  text-align: center;
+  font-family: var(--serif-jp);
+  font-size: 16px;
+  letter-spacing: 0.12em;
+  transition: background 200ms ease, transform 200ms ease;
+}
+:lang(en) .ih-apply-button {
+  font-family: var(--serif-en);
+  font-size: 18px;
+  letter-spacing: 0.08em;
+}
+
+.ih-apply-email {
+  background: var(--ink);
+  color: var(--paper);
+  border: 1px solid var(--ink);
+}
+.ih-apply-email:hover {
+  background: #2a2622;
+}
+
+.ih-apply-phone {
+  background: var(--paper);
+  color: var(--ink);
+  border: 1px solid var(--ink);
+}
+.ih-apply-phone:hover {
+  background: rgba(0,0,0,0.02);
+}
+
+.ih-apply-button:active {
+  transform: translateY(1px);
+}
+
+.ih-apply-detail {
+  font-family: var(--sans-jp);
+  font-size: 12px;
+  letter-spacing: 0.2em;
+  opacity: 0.7;
+}
+:lang(en) .ih-apply-detail {
+  font-size: 13px;
+}
+
+/* FAQ */
+.ih-faq-list {
+  margin-top: 32px;
+}
+
+.ih-faq-item {
+  border-bottom: 1px solid var(--rule-soft);
+  padding: 20px 0;
+}
+
+.ih-faq-question {
+  font-family: var(--serif-jp);
+  font-size: 16px;
+  letter-spacing: 0.08em;
+  cursor: pointer;
+  list-style: none;
+  position: relative;
+  padding-right: 32px;
+}
+:lang(en) .ih-faq-question {
+  font-family: var(--serif-en);
+  font-size: 17px;
+  letter-spacing: 0.04em;
+}
+
+.ih-faq-question::after {
+  content: "+";
+  position: absolute;
+  right: 0;
+  top: 0;
+  font-family: var(--serif-en);
+  font-size: 20px;
+  color: var(--ink-soft);
+  transition: transform 200ms ease;
+}
+
+details[open] .ih-faq-question::after {
+  transform: rotate(45deg);
+}
+
+.ih-faq-answer {
+  margin: 16px 0 0;
+  font-family: var(--sans-jp);
+  font-size: 13px;
+  line-height: 1.8;
+  letter-spacing: 0.08em;
+  color: var(--ink-soft);
+}
+:lang(en) .ih-faq-answer {
+  font-size: 14px;
+  letter-spacing: 0.04em;
+}
+
+/* Other jobs */
+.ih-other-jobs {
+  display: grid;
+  gap: 16px;
+  margin-top: 32px;
+}
+
+.ih-other-job-card {
+  display: grid;
+  grid-template-columns: 1fr auto auto;
+  align-items: center;
+  gap: 16px;
+  padding: 20px;
+  border: 1px solid var(--rule-soft);
+  text-decoration: none;
+  color: var(--ink);
+  transition: background 200ms ease, border-color 200ms ease, padding-left 200ms ease;
+}
+.ih-other-job-card:hover {
+  background: rgba(0,0,0,0.02);
+  border-color: var(--ink-soft);
+  padding-left: 24px;
+}
+
+.ih-other-job-title {
+  font-family: var(--serif-jp);
+  font-size: 17px;
+  letter-spacing: 0.08em;
+  margin: 0;
+  font-weight: 400;
+}
+:lang(en) .ih-other-job-title {
+  font-family: var(--serif-en);
+  font-size: 18px;
+  letter-spacing: 0.04em;
+}
+
+.ih-other-job-type {
+  font-family: var(--sans-jp);
+  font-size: 10px;
+  letter-spacing: 0.2em;
+  color: var(--ink-soft);
+}
+:lang(en) .ih-other-job-type {
+  text-transform: uppercase;
+}
+
+.ih-other-job-arrow {
+  font-family: var(--serif-en);
+  font-size: 16px;
+  color: var(--ink-soft);
+}

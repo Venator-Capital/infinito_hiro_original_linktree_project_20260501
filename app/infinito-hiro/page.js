@@ -7,7 +7,7 @@ const COPY = {
   ja: {
     locale: "ja",
     location: "東京 · 赤坂",
-    intro: "イタリア料理界を長年牽引してきた巨匠―山田宏巳。手掛けるのは、全国から取り寄せた旬の食材の\n美味しさを最大限引き出したシンプルなイタリアン。熟練の繊細な技と自由な発想に裏打ちされた逸品の数々をぜひご堤能ください。",
+    intro: "イタリア料理界を長年牽引してきた巨匠―山田宏巳。手掛けるのは、全国から取り寄せた旬の食材の\n美味しさを最大限引き出したシンプルなイタリアン。熟練の繊細な技と自由な発想に裏打ちされた逸品の数々をぜひご堪能ください。",
     primaryEyebrow: "ご予約",
     primaryLabel: "OMAKASE",
     primarySub: "オンライン予約",
@@ -18,6 +18,8 @@ const COPY = {
       { label: "Instagram", sub: "@hiroinfinito", href: "https://www.instagram.com/hiroinfinito/" },
       { label: "Facebook", sub: "infinitohiro", href: "https://www.facebook.com/infinitohiro/" }
     ],
+    recruitLabel: "採用情報",
+    recruitSub: "一緒に働く仲間を募集",
     contactHeading: "所在地",
     address1: "〒107-0052",
     address2: "東京都港区赤坂 5-1-38",
@@ -43,6 +45,8 @@ const COPY = {
       { label: "Instagram", sub: "@hiroinfinito", href: "https://www.instagram.com/hiroinfinito/" },
       { label: "Facebook", sub: "infinitohiro", href: "https://www.facebook.com/infinitohiro/" }
     ],
+    recruitLabel: "Careers",
+    recruitSub: "Join our team",
     contactHeading: "Address",
     address1: "5-1-38 Akasaka, Minato-ku",
     address2: "Akasaka Tosho Bldg. 3F",
@@ -112,6 +116,16 @@ export default function InfinitoHiro() {
             </a>
           ))}
         </nav>
+
+        <section className="ih-recruit-wrap">
+          <a
+            className="ih-recruit-link"
+            href="/infinito-hiro/recruit">
+            <span className="ih-recruit-label">{t.recruitLabel}</span>
+            <span className="ih-recruit-sub">{t.recruitSub}</span>
+            <span className="ih-recruit-arrow" aria-hidden="true">→</span>
+          </a>
+        </section>
 
         <section className="ih-contact">
           <div className="ih-section-eyebrow">{t.contactHeading}</div>
