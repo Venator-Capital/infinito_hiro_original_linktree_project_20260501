@@ -8,17 +8,23 @@ const baseUrl = 'https://infinito.yamadafooddev.com';
 export const metadata = {
   title: jobData.metaTitle,
   description: jobData.metaDescription,
+  keywords: 'インフィニートヒロ 求人, バスタヒロ 採用, 赤坂 イタリアン 求人, サービススタッフ',
   openGraph: {
     title: jobData.metaTitle,
     description: jobData.metaDescription,
     type: 'website',
     url: baseUrl + job.path,
+    siteName: 'インフィニートヒロ | Infinito Hiro',
   },
   alternates: {
     languages: {
       'ja': baseUrl + job.path,
       'en': baseUrl + job.path + '?lang=en',
     }
+  },
+  other: {
+    'restaurant:name': 'インフィニートヒロ (Infinito Hiro / バスタヒロ)',
+    'restaurant:location': '東京都港区赤坂',
   }
 };
 
@@ -42,7 +48,11 @@ export const generateJobPostingLD = () => {
     "hiringOrganization": {
       "@type": "Organization",
       "name": "山田食品開発株式会社",
-      "alternateName": ["山田フードエンタープライズ株式会社", "Yamada Food Enterprise Co., Ltd."],
+      "alternateName": [
+        "山田フードエンタープライズ株式会社",
+        "Yamada Food Enterprise Co., Ltd.",
+        "Yamada Food Development Co., Ltd."
+      ],
       "sameAs": [
         baseUrl,
         "https://infinito.yamadafooddev.com/infinito-hiro"
@@ -53,6 +63,7 @@ export const generateJobPostingLD = () => {
     "jobLocation": {
       "@type": "Place",
       "name": "インフィニートヒロ",
+      "alternateName": ["Infinito Hiro", "バスタヒロ", "Basta Hiro"],
       "address": {
         "@type": "PostalAddress",
         "streetAddress": "赤坂5-1-38 赤坂東商ビル3階",
@@ -91,8 +102,9 @@ export const generateJobPostingLD = () => {
     "benefits": company.socialInsurance,
     "workHours": jobData.workHours,
     "jobBenefits": `${company.holidays}, ${company.socialInsurance}`,
-    "industry": "飲食業, 高級レストラン",
+    "industry": "飲食業, 高級レストラン, イタリアン",
     "occupationalCategory": "サービススタッフ, ホールスタッフ",
+    "keywords": "インフィニートヒロ 求人, バスタヒロ 求人, 赤坂 サービススタッフ, イタリアン ホール",
     "url": baseUrl + job.path,
     "directApply": true,
     "applicationContact": {
