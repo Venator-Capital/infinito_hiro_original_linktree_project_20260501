@@ -42,7 +42,7 @@ export const generateJobPostingLD = () => {
       "name": "山田食品開発株式会社",
       "value": `recruit-service-${today}`
     },
-    "datePosted": today,
+    "datePosted": "2024-05-01",
     "validThrough": nextYear,
     "employmentType": ["FULL_TIME", "PART_TIME"],
     "hiringOrganization": {
@@ -107,6 +107,16 @@ export const generateJobPostingLD = () => {
     "keywords": "インフィニートヒロ 求人, バスタヒロ 求人, 赤坂 サービススタッフ, イタリアン ホール",
     "url": baseUrl + job.path,
     "directApply": true,
+    "applicantLocationRequirements": {
+      "@type": "Country",
+      "name": "JP"
+    },
+    "jobLocationType": "TELECOMMUTE_NOT_ALLOWED",
+    "employmentUnit": {
+      "@type": "Organization",
+      "name": "インフィニートヒロ",
+      "sameAs": "https://infinito.yamadafooddev.com/infinito-hiro"
+    },
     "applicationContact": {
       "@type": "ContactPoint",
       "email": company.email,
