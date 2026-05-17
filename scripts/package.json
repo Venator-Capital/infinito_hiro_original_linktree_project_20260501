@@ -1,0 +1,12 @@
+{
+  "name": "infinito-hiro-indexing",
+  "version": "1.0.0",
+  "description": "Google Indexing API for Infinito Hiro job postings",
+  "main": "indexing-api.js",
+  "scripts": {
+    "index": "node indexing-api.js"
+  },
+  "dependencies": {
+    "googleapis": "^105.0.0"
+  }
+}
