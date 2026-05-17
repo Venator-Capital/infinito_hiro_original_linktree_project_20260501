@@ -1,6 +1,6 @@
 export const COMPANY_INFO = {
   ja: {
-    companyName: "山田フードエンタープライズ株式会社",
+    companyName: "山田食品開発株式会社",
     storeName: "インフィニートヒロ",
     postalCode: "〒107-0052",
     address: "東京都港区赤坂5-1-38 赤坂東商ビル3階",
@@ -15,7 +15,7 @@ export const COMPANY_INFO = {
     socialInsurance: "雇用保険、労災保険、厚生年金、健康保険"
   },
   en: {
-    companyName: "Yamada Food Enterprise Co., Ltd.",
+    companyName: "Yamada Food Development Co., Ltd.",
     storeName: "Infinito Hiro",
     postalCode: "107-0052",
     address: "5-1-38 Akasaka, Minato-ku, Tokyo, Akasaka Tosho Bldg. 3F",
